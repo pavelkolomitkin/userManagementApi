@@ -1,0 +1,3 @@
+user_management:
+    resource: "@UserManagementBundle/Resources/config/routing.yml"
+    prefix:   /

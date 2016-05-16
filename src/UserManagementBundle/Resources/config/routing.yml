@@ -1,0 +1,5 @@
+groups:
+  resource: "@UserManagementBundle/Resources/config/group.yml"
+
+users:
+  resource: "@UserManagementBundle/Resources/config/user.yml"

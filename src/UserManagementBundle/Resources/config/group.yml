@@ -1,0 +1,28 @@
+groupList:
+  path: /groups/fetch
+  defaults:  { _controller: UserManagementBundle:Group:list }
+
+groupGet:
+  path: /groups/{id}
+  defaults:  { _controller: UserManagementBundle:Group:get }
+  methods: [GET]
+
+groupCreate:
+  path: /groups/create
+  defaults:  { _controller: UserManagementBundle:Group:create }
+  methods: [POST]
+
+groupEdit:
+  path: /groups/{id}/modify
+  defaults:  { _controller: UserManagementBundle:Group:edit }
+  methods: [PUT]
+
+groupAddUser:
+  path: /groups/{groupId}/addUser/{userId}
+  defaults:  { _controller: UserManagementBundle:Group:addUser }
+  methods: [POST]
+
+groupRemoveUser:
+  path: /groups/{groupId}/removeUser/{userId}
+  defaults:  { _controller: UserManagementBundle:Group:removeUser }
+  methods: [POST]

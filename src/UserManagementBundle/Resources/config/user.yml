@@ -1,0 +1,22 @@
+userGroupList:
+  path: /users/fetch/{groupId}
+  defaults:  { _controller: UserManagementBundle:User:listByGroup }
+
+userList:
+  path: /users/fetch
+  defaults:  { _controller: UserManagementBundle:User:list }
+
+userGet:
+  path: /users/{id}
+  defaults:  { _controller: UserManagementBundle:User:get }
+  methods: [GET]
+
+userCreate:
+  path: /users/create
+  defaults:  { _controller: UserManagementBundle:User:create }
+  methods: [POST]
+
+userModify:
+  path: /users/{id}/modify
+  defaults:  { _controller: UserManagementBundle:User:edit }
+  methods: [PUT]
